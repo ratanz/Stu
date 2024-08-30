@@ -51,13 +51,14 @@ const Page3: React.FC = () => {
         const firstChild = containerRef.current.children[0] as HTMLElement;
         const itemWidth = firstChild.offsetWidth;
         const gap = 28; // gap between items
+        const scrollPosition = index * (itemWidth + gap);
         containerRef.current.scrollTo({
-          left: index * (itemWidth + gap),
+          left: scrollPosition,
           behavior: 'smooth'
         });
       }
     };
-
+  
     const navigateLeft = () => {
       setCurrentIndex((prevIndex) => {
         const newIndex = Math.max(prevIndex - itemsPerView, 0);
@@ -68,7 +69,7 @@ const Page3: React.FC = () => {
   
     const navigateRight = () => {
       setCurrentIndex((prevIndex) => {
-        const newIndex = Math.min(prevIndex + itemsPerView, mediaItems.length - itemsPerView);
+        const newIndex = Math.min(prevIndex + itemsPerView, mediaItems.length - 1);
         scrollToIndex(newIndex);
         return newIndex;
       });
@@ -294,14 +295,17 @@ const Page3: React.FC = () => {
           <button
             onClick={navigateLeft}
             className="p-3 pl-4 pr-4 bg-[#252525e3] border-1 border-gray rounded-full text-white hover:bg-[#424242e7]
-             transtion-all duration-300 ease-in-out"
+             transition-all duration-300 ease-in-out"
+             disabled={currentIndex === 0}
+            
           >
             <i className="ri-arrow-left-line"></i>
           </button>
           <button
             onClick={navigateRight}
             className="p-3 pl-4 pr-4 bg-[#252525e3] border-1 border-gray rounded-full text-white hover:bg-[#424242e7]
-             transtion-all duration-300 ease-in-out"
+             transition-all duration-300 ease-in-out"
+             disabled={currentIndex >= mediaItems.length - itemsPerView}
           >
             <i className="ri-arrow-right-line"></i>
           </button>
