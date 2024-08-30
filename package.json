@@ -1,0 +1,32 @@
+{
+  "name": "studiosize",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "framer-motion": "^11.3.28",
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.9",
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "remixicon": "^4.3.0",
+    "swiper": "^11.1.10"
+  },
+  "devDependencies": {
+    "@types/gsap": "^1.20.2",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
