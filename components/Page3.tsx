@@ -296,7 +296,6 @@ const Page3: React.FC = () => {
             onClick={navigateLeft}
             className="p-3 pl-4 pr-4 bg-[#252525e3] border-1 border-gray rounded-full text-white hover:bg-[#424242e7]
              transition-all duration-300 ease-in-out"
-             disabled={currentIndex === 0}
             
           >
             <i className="ri-arrow-left-line"></i>
@@ -305,7 +304,7 @@ const Page3: React.FC = () => {
             onClick={navigateRight}
             className="p-3 pl-4 pr-4 bg-[#252525e3] border-1 border-gray rounded-full text-white hover:bg-[#424242e7]
              transition-all duration-300 ease-in-out"
-             disabled={currentIndex >= mediaItems.length - itemsPerView}
+           
           >
             <i className="ri-arrow-right-line"></i>
           </button>
