@@ -125,7 +125,7 @@ const Footer: React.FC = () => {
 
   return (
     <div className="footer-content w-full relative h-[58vw] overflow-hidden pt-40 bg-black p-14">
-      <ul className="links flex w-full list-none border-b-2 gap-14 border-zinc-800 h-16 ">
+      <ul className="links flex w-full list-none border-b-2 gap-14 border-zinc-800 h-16 z-50 ">
         {socialLinks.map((link, index) => (
           <SocialLink
             key={link.name}
