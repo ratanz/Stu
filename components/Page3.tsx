@@ -275,14 +275,14 @@ const Page3: React.FC = () => {
   ];
 
   return (
-    <div className="page-3 bg-black w-full h-[52vw] p-14 font-[Satoshi]">
+    <div className="page-3 bg-black w-full lg:h-[52vw] h-[75vw] p-6 lg:p-14 font-[Satoshi]">
       <div className="text-content flex justify-between items-center w-full ]">
-        <h1 className="text-white text-5xl font-bold ">Featured work</h1>
+        <h1 className="text-white text-xl lg:text-5xl md:text3xl ">Featured work</h1>
         <div className="buttons flex items-center justify-between w-fit gap-1 hover:bg ">
           <Link href="../portfolio">
-          <button className="p-3 px-5  border-2 border-[#1d1d1dec] rounded-full text-[#ffffff]  relative overflow-hidden group">
+          <button className="lg:p-3 lg:px-5 p-[1px] px-[9px] border-2 border-[#1d1d1dec] rounded-full text-[#ffffff] relative overflow-hidden group">
             <span
-             className="relative z-10">View all</span>
+             className="relative z-10 text-[12px] lg:text-lg">View all</span>
             <span className="absolute inset-0 z-0 bg-transparent group-hover:bg-[#252525e3] transition-colors duration-300 ease-[cubic-bezier(0.51,0.01,0.2,1)]" />
             <span
               className="absolute inset-0 z-0 bg-[#252525e3] scale-0 group-hover:scale-100 rounded-full transition-transform duration-300 ease-[cubic-bezier(0.51,0.01,0.2,1)]"
@@ -294,7 +294,7 @@ const Page3: React.FC = () => {
           </Link>
           <button
             onClick={navigateLeft}
-            className="p-3 pl-4 pr-4 bg-[#252525e3] border-1 border-gray rounded-full text-white hover:bg-[#424242e7]
+            className="lg:p-3 lg:px-4 p-1 px-2 bg-[#252525e3] border-1 border-gray rounded-full text-white hover:bg-[#424242e7]
              transition-all duration-300 ease-in-out"
             
           >
@@ -302,7 +302,7 @@ const Page3: React.FC = () => {
           </button>
           <button
             onClick={navigateRight}
-            className="p-3 pl-4 pr-4 bg-[#252525e3] border-1 border-gray rounded-full text-white hover:bg-[#424242e7]
+            className="lg:p-3 lg:px-4 p-1 px-2 bg-[#252525e3] border-1 border-gray rounded-full text-white hover:bg-[#424242e7]
              transition-all duration-300 ease-in-out"
            
           >
@@ -311,7 +311,7 @@ const Page3: React.FC = () => {
         </div>
       </div>
 
-      <div className="content mt-10 relative">
+      <div className="content lg:mt-10 mt-5 relative">
         <div
           ref={containerRef}
           className="container flex gap-7 flex-nowrap overflow-auto overflow-y-hidden"
@@ -353,8 +353,8 @@ const Page3: React.FC = () => {
                 ></video>
               </div>
               <div className="text-white mt-4">
-                <h3 className="text-2xl font-bold">{item.title}</h3>
-                <p className="text-lg text-gray-400">{item.subtitle}</p>
+                <h3 className="lg:text-2xl text-[15px] font-bold">{item.title}</h3>
+                <p className="lg:text-lg text-[10px] text-gray-400">{item.subtitle}</p>
               </div>
             </div>
           ))}
@@ -362,7 +362,7 @@ const Page3: React.FC = () => {
 
         <div
           ref={cursorRef}
-          className="drag-cursor fixed p-2 px-10 top-0 left-0 w-[75px] h-[45px] rounded-full bg-[#f7f7f7f6] text-black flex items-center justify-center text-[15px] pointer-events-none z-50 tranlate-x-[-50%] translate-y-[-50%] opacity-0 font-bold"
+          className="drag-cursor fixed p-2 px-10 top-0 left-0 w-[75px] h-[45px] rounded-full bg-[#f7f7f7f6] text-black lg:flex md:hidden hidden items-center justify-center text-[15px] pointer-events-none z-50 translate-x-[-50%] translate-y-[-50%] opacity-0  font-bold"
         >
           Drag
         </div>

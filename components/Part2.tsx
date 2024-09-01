@@ -65,9 +65,9 @@ const Part2: React.FC = () => {
     <div className="part2 w-full h-[59vw] relative bg-black">
       <div
         ref={cursorRef}
-        className="cursor h-[11vw] w-[11vw] bg-[#e9e9e9e3] rounded-full fixed top-[0%] z-50 flex items-center justify-center pointer-events-none"
+        className="cursor h-[11vw] w-[11vw] bg-[#e9e9e9e3] rounded-full fixed top-[0%] z-50 lg:flex sm:hidden items-center justify-center pointer-events-none "
       >
-        <h4 className="text-2xl font-bold">Play reel</h4>
+        <h4 className="lg:text-2xl font-bold  ">Play reel</h4> 
       </div>
       <div className="part2-content">
         <video

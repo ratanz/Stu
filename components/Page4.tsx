@@ -15,7 +15,7 @@ const Page4 = () => {
     gsap.fromTo(
       text,
       {
-        y: "110%", // Start from below the view
+        y: "115%", // Start from below the view
         opacity: 0, // Start as invisible
       },
       {
@@ -37,15 +37,15 @@ const Page4 = () => {
 
   return (
     <>
-      <div className="main bg-black w-full h-[55vw] p-14 font-[Satoshi]">
+      <div className="main bg-black w-full h-[60vw] lg:p-14 p-4 font-[Satoshi]">
         <div className="text-content-2 flex w-full flex-row]">
-          <h1 className="text-white text-[5.4vw] font-bold  leading-none ">
+          <h1 className="text-white lg:text-[5.4vw] text-[4.5vw] font-bold  leading-none ">
             Back to the simple, <br />
             intuitive, and inspiring
           </h1>
         </div>
-        <div className="content flex p-10 h-[40vw] items-center justify-between">
-          <div className="video w-[35vw]  p-10 flex items-center justify-center object-cover">
+        <div className="content flex lg:p-10 p-0 lg:h-[40vw] h-[29vw] items-center justify-between">
+          <div className="video lg:w-[35vw] lg:p-10 p-2 flex items-center justify-center object-cover">
             <video
               autoPlay
               muted
@@ -53,16 +53,16 @@ const Page4 = () => {
               src="https://studio-size.com/wp-content/uploads/2024/06/size_clients_compressed.mp4"
             ></video>
           </div>
-          <div className="text text-white flex mt-24 flex-col w-[46vw] px-10 justify-center">
-            <h1 className="text-[1.6vw] font-bold leading-tight">
+          <div className="text text-white flex lg:mt-24 md:mt-22 mt-[25vw] flex-col lg:w-[49vw] w-full lg:px-10 px-5 justify-center">
+            <h1 className="lg:text-[1.6vw] md:text-[2vw] text-[2.1vw] font-bold leading-tight">
               Big multinational companies or small local brands. Partner
               approach with one universal goal - to create authentic,
               functional, and beautiful design.
             </h1>
-            <h1 className="mt-10 font-bold text-2xl flex items-center gap-10">
+            <h1 className="mt-10 font-bold lg:text-2xl md:text-2xl text-[2.1vw] flex items-center lg:gap-10 gap-3">
               Lets talk
               <button
-                className="p-2 pl-3 pr-3  bg-[#252525cb] border-1 border-gray rounded-full text-white hover:bg-[#424242e7]
+                className="lg:p-2 lg:px-3 p-1 px-3 lg:text-2xl sm:text-[5px] bg-[#252525cb] border-1 border-gray rounded-full text-white hover:bg-[#424242e7]
              transtion-all duration-300 ease-in-out hover:scale-110"
               >
                 <i className="ri-arrow-right-line"></i>
