@@ -37,7 +37,7 @@ const Page4 = () => {
 
   return (
     <>
-      <div className="main bg-black w-full h-[60vw] lg:p-14 p-4 font-[Satoshi]">
+      <div className="main bg-black w-full lg:h-[58vw] h-[75vw] lg:p-14 p-4 font-[Satoshi]">
         <div className="text-content-2 flex w-full flex-row]">
           <h1 className="text-white lg:text-[5.4vw] text-[4.5vw] font-bold  leading-none ">
             Back to the simple, <br />

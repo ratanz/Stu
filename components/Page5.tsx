@@ -138,12 +138,12 @@ const Page5: React.FC = () => {
   }, [activeIndex]);
 
   return (
-    <div className="bg-black min-h-screen w-full">
+    <div className="bg-black lg:h-[80vw] h-[86vw] w-full">
       <div
         ref={containerRef}
-        className="w-full h-[83vw] p-14 font-[Satoshi] relative "
+        className="w-full lg:h-[83vw] lg:p-14 p-4 font-[Satoshi] relative "
       >
-        <h1 className="text-white font-bold text-[1.3vw] mb-4">Services</h1>
+        <h1 className="text-white font-bold lg:text-[1.3vw] text-sm mb-4">Services</h1>
         <div className="content flex items-start justify-between">
           <div className="w-[100%] relative" style={{ height: "100%" }}>
             <div
