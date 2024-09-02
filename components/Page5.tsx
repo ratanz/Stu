@@ -138,7 +138,7 @@ const Page5: React.FC = () => {
   }, [activeIndex]);
 
   return (
-    <div className="bg-black lg:h-[80vw] h-[86vw] w-full">
+    <div className="bg-black lg:h-[80vw] h-[90vw]  w-full">
       <div
         ref={containerRef}
         className="w-full lg:h-[83vw] lg:p-14 p-4 font-[Satoshi] relative "

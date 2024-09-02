@@ -2,7 +2,7 @@ import React from "react";
 
 const Page7 = () => {
   return (
-    <div className="w-full h-screen relative bg-black p-14 font-[Satoshi]  ">
+    <div className="w-full h-screen relative bg-black lg:p-14 p-6 font-[Satoshi]  ">
       <div className="video-content bg-black w-full h-full relative overflow-hidden ">
         <video
           className="rounded-[10px] object-cover w-full h-full"
@@ -12,7 +12,7 @@ const Page7 = () => {
           src="https://studio-size.com/wp-content/uploads/2024/05/Studio-Size-%E2%80%94-Labs02.mp4"
         ></video>
 
-        <div className="absolute inset-0 flex flex-col justify-end p-14 ">
+        <div className="absolute inset-0 flex flex-col justify-end lg:p-14 p-4 ">
           <h1 className="text-white text-[5vw] w-[75%] font-bold leading-[4.3vw] tracking-tighter">
             Size Labs — the <br /> place for all artfroms
           </h1>
