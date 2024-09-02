@@ -157,7 +157,7 @@ const Footer: React.FC = () => {
           <h1 className="text-zinc-400 font-sans lg:w-34  hover:text-zinc-100 transition-all duration-300 ease-in-out hover:scale-105 lg:text-xl text-[10px]">Small is beautiful.</h1>
         </div>
 
-        <div className="flex justify-end w-full h-full lg:text-xs text-[9px] items-center font-sans lg:gap-10 gap-2  mb-10 absolute">
+        <div className="flex justify-end w-full h-full lg:text-xs text-[7px] items-center font-sans lg:gap-10 gap-2  mb-10 absolute">
           <h1 className="text-zinc-400 hover:cursor-pointer hover:text-zinc-100 transition-all duration-300 ease-in-out hover:scale-105">Index</h1>
           <h1 className="text-zinc-400 hover:cursor-pointer hover:text-zinc-100 transition-all duration-300 ease-in-out hover:scale-105 ">About</h1>
           <h1 className="text-zinc-400 hover:cursor-pointer hover:text-zinc-100 transition-all duration-300 ease-in-out hover:scale-105 ">Blog</h1>
