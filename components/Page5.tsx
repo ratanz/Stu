@@ -138,7 +138,7 @@ const Page5: React.FC = () => {
   }, [activeIndex]);
 
   return (
-    <div className="bg-black lg:h-[80vw] h-[90vw]  w-full">
+    <div className="bg-black lg:h-[80vw] h-[115vw] w-full">
       <div
         ref={containerRef}
         className="w-full lg:h-[83vw] lg:p-14 p-4 font-[Satoshi] relative "
@@ -174,7 +174,7 @@ const Page5: React.FC = () => {
             </div>
           </div>
 
-          <div className="text-content h-full w-[70vw]">
+          <div className="text-content w-[70vw]">
             {services.map((service, index) => (
               <motion.h2
                 key={index}
