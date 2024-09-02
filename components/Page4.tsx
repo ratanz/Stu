@@ -15,7 +15,7 @@ const Page4 = () => {
     gsap.fromTo(
       text,
       {
-        y: "115%", // Start from below the view
+        y: "135%", // Start from below the view
         opacity: 0, // Start as invisible
       },
       {
