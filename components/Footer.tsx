@@ -169,8 +169,8 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="flex items-center justify-center w-[100%] lg:mt-0 mt-6 ">
-        <h1 className="text-white text-[31vw] font-sans font-bold leading-none relative lg:right-5">Footer
-          <span className="lg:text-2xl text-sm absolute lg:right-14 lg:bottom-10 bottom-0 right-0">©</span>
+        <h1 className="text-white lg:text-[31vw] text-[28vw] font-sans font-bold leading-none relative lg:right-5">Footer
+          <span className="lg:text-2xl text-[16px] absolute lg:right-14 lg:bottom-10 bottom-0 right-0">©</span>
         </h1>
    
       </div>
